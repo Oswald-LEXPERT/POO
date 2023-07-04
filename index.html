@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" href="https://unsplash.it/32/32"> -->
+    <script type="module" src="./js/index.js" defer></script>
+    <title>Programmation Objet Orienté</title>
+</head>
+
+<body>
+    <section>
+        <h1>JavaScript POO</h1>
+        <p>La Programmation Objet orientée est un paradigme de Programmation qui
+            permet d'organiser et de struturer le code en utilisant des concepts appelés <strong>objets.</strong>
+            Un Objet représente un concept , une idée ou toute entité du monde physique,
+            comme une voiture , une personne ou encore une page d'un livre
+        </p>
+        <p><strong>Un paradigme de Programmation </strong> est une approche ou une méthode générale qui guide la façon
+            dont on structure et organise le code d'un programme.
+        </p>
+    </section>
+    <section>
+        <h2>Les modules JavaScript</h2>
+        <p>
+            <strong>Les modules </strong>
+            JavaScript sont un mécanisme de regroupement et d'organisation de code JavaScript . Ils permettent de découper un
+            programme en plusieurs fichiers, appelés <em> modules </em>, qui peuvent être réutilisés et importés dans d'autres fichiers
+        </p>
+           <p>Pour créer un module JavaScript , on utilise le mot-clé <strong><em>export</em></strong> pour déclarer les éléments (fonctions , variables , classes) que vous souhaitez rendre accessibles à d'autres modules.
+        Par exemple:
+           <code>
+            <pre>
+
+                //Dans un fichier nommé "module.js"
+      
+                //Exporter une fonction
+                export function maFonction (){
+                    // Code de la fonction
+                }
+      
+                //Exporter une variable
+                export const maVariable = 42;
+      
+                //Exporter une classe
+                export class Maclass {
+                    // Code de la classe
+                }
+            </pre>
+        
+           </code></p>
+           <p>Ensuite, dans un autre fichier, nous pouvons utiliser le mot-clé <strong><em>"import</em></strong>
+        pour importer les éléments exportés depuis le module :
+         <code>
+            <pre>
+
+                // Dans un autre fichier
+      
+                // Importer une fonction
+                import { maFonction } from './module.js';
+      
+                // Importer une variable
+                import { maVariable } from './module.js';
+      
+                // Importer une classe
+                import { maClass } from './module.js';
+            </pre>
+        
+         </code>
+        </p>
+    </section>
+
+   
+    <form action="" method="post">
+      <input type="text" id="fname" class="name" placeholder="firstname">
+      <input type="text" id="lname" class="name" placeholder="lastname">
+      <button type="submit" id="button">Envoyé</button>
+    </form>
+   
+
+
+    <script>
+        //Syntaxe ESS (Ecma Script S | JavaScript 2009)
+        // let person1 = {
+        //     firstname : "John",
+        //     lastname : "Doe",
+        //     courir: function () {
+        //         console.log("Je cours 🚲 2009 !");
+        //     },
+        //     fullName : function () {
+        //     return ` Moi C'est  ${person1.firstname} ${person1.lastname}`
+        // }
+        // };
+        // person1.courir(); //appelle de la methode 'courir'
+        // console.log(person1.fullName());
+        
+        // // Syntaxe ES6 (Ecma Script 6 | javaScript 2015)
+        //         let person2 = {
+        //     firstname : "John",
+        //     lastname : "Doe",
+        //     courir () {
+        //         console.log("Je cours 🚲 2015 !");
+        //     },
+        //     nbrBras : 2
+        // };
+
+        // person2.age = 24;
+        // person2.firstname = 'Gabriel'
+        // console.log(person2.firstname);
+        // console.log(person2.age);
+        // person2.courir(); //appelle de la methode 'courir'
+        // console.log(person2);
+        // person2.fullName = function () {
+        //     return `On m'appelle ${person2.firstname} ${person2.lastname}`
+        // }
+        // console.log(person2.fullName());
+
+
+    //   // Les classes (2015- ES6)
+    //     class Person {
+           
+    //         constructor(fname, lname){
+    //          this.firstname = fname;
+    //          this.lastname = lname;
+    //         }
+    //         courir() {
+    //             console.log('Je cours 🚲 2015');
+    //         }
+    //         fullName (){
+    //            console.log(`On m'appelle ${this.firstname} ${this.lastname}`); 
+    //         }
+    //     }
+    //     let toto = new Person('toto', 'DuJardin');
+    //     toto.fullName();
+
+    //     let paulin = new Person('Paulin', 'Goliath');
+    //     paulin.fullName();
+    //     console.log(paulin);
+    //     // console.log(toto);
+    //     // toto.fullName();
+     
+
+
+    // class Request {
+    //   constructor(nom, age){
+    //     this.name = nom;
+    //     this.age = age;
+    //   };
+
+    //   getInfo (element1, element2){
+    //     this.name.push(element1);
+    //    this.age.push(element2);
+    //   };
+
+    //   getRecupere (){
+    //     console.log(`Salut ${this.name} , vous avez ${this.age}`);
+    //   };
+    // }
+
+    // const info1 = new Request('Ahoumenou', 24);
+    // const info2 = new Request('Emile', 25);
+    // info1.getRecupere();
+    // info2.getRecupere();
+
+    // class Animal {
+
+    //   constructor(espace, nbreDePattes){
+    //     console.log("appel du constructeur");
+
+    //     this.espace = espace;
+    //     this.nbreDePattes = nbreDePattes;
+    //   };
+    //  courir(){
+    //   console.log(`${this.espace} court`);
+    //  }
+
+    // }
+
+    // // l'objet obj est une instance de la classe Animal
+    // let chien = new Animal("chien", 4);
+    // chien.courir();
+    // console.log(chien);
+
+    </script>
+</body>
+
+</html>
