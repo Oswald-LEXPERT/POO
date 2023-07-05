@@ -11,4 +11,5 @@ class Request {
 }
 
 //On peut toutefois fait exportation comme suit :
-export {Request};
+export default  Request ;
+// export default { Request} ;
