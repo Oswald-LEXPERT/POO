@@ -24,8 +24,8 @@
    set name(newName){
         this.#name = newName;
     }
-   set age(newName){
-        this.#age = newName;
+   set age(newAge){
+        this.#age = newAge;
     }
 
     Presente(){
@@ -34,4 +34,6 @@
         );
     }
 }
+
+
 
